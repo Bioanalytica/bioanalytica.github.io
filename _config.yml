@@ -109,7 +109,7 @@ toc: true
 
 comments: true
   # Global switch for the post-comment system. Keeping it empty means disabled.
-  provider: utterances
+  provider: giscus
   # The provider options are as follows:
   disqus:
     shortname: # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
@@ -120,14 +120,14 @@ comments: true
     theme: github-dark
   # Giscus options › https://giscus.app
   giscus:
-    repo: # <gh-username>/<repo>
-    repo_id:
+    repo: bioanalytica/comments
+    repo_id: 850155486
     category:
     category_id:
     mapping: # optional, default to 'pathname'
     strict: # optional, default to '0'
-    input_position: # optional, default to 'bottom'
-    lang: # optional, default to the value of `site.lang`
+    input_position: top # optional, default to 'bottom'
+    lang: en # optional, default to the value of `site.lang`
     reactions_enabled: # optional, default to the value of `1`
 
 # Self-hosted static assets, optional › https://github.com/cotes2020/chirpy-static-assets
